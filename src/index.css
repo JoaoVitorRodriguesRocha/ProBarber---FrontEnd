@@ -1,0 +1,136 @@
+
+/*importando fontes para o projeto*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
+/*variaveis para o projeto*/
+:root{
+  --font-logo: Karantina;
+  --cor-logo: #4C00B7;
+  --cor-letras: #333333;
+  --font-letras: Inter;
+  --cor-usuario:#CCCCCC;
+  --cor-botao: #6600DB;
+}
+
+/*estilo tela de login*/
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*estilo logo*/
+.logo{
+  font-weight: 400;
+  font-family: var(--font-logo);
+  color: var(--cor-logo);
+  font-size: 5em;
+}
+
+/*palavra pro tem um tamanho diferente*/
+.pro{
+  font-weight: 400;
+  font-family: var(--font-logo);
+  color: var(--cor-logo);
+  font-size: 0.5em; 
+}
+
+/*estilo usuario e senha*/
+.usuario, .senha{
+  color: var(--cor-letras);
+  font-family: var(--font-letras);
+  font-weight: 400;
+  height: 10px;
+  font-size: 1em;
+}
+
+/*estilo placeholder*/
+.inserir-usuario, .inserir-senha{
+  width: 20em;
+  height: 3em;
+  border-radius: 10px;
+  border: 1px solid #CCCCCC;
+}
+/*tirando o foco das bordas pra nao ficar preto quando clica*/
+.inserir-usuario:focus,
+.inserir-senha:focus {
+  outline: none;
+}
+
+/* campo onde vai a senha */
+::placeholder{
+  color: var(--cor-usuario);
+  font-family: var(--font-letras);
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* estilo botao login */
+.botao-entrar{
+  background-color: var(--cor-botao);
+  height: 3em;
+  width: 21em;
+  margin-top: 3em;
+  padding: 0.5em;
+  border: var(--cor-letras);
+  border-radius: 1em;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: var(--font-letras);
+}
+
+/*hover do botao entrar web*/
+.botao-entrar:hover{
+  background-color: #CCCCCC;
+  color: #333333;
+  border: #333333;
+}
+
+/*Responsivo para o celular*/
+@media (max-width: 932px){
+  
+  .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+    margin-top: 20em;
+  }
+  
+  .logo{
+    font-weight: 400;
+    font-family: var(--font-logo);
+    color: var(--cor-logo);
+    font-size: 5em;
+    margin-right: 0.3em;  
+  }
+
+  .pro{
+    font-weight: 400;
+    font-family: var(--font-logo);
+    color: var(--cor-logo);
+    font-size: 0.5em; 
+  }
+  
+  
+  .usuario, .senha{
+    color: var(--cor-letras);
+    font-family: var(--font-letras);
+    font-weight: 400;
+    height: 1em;
+    font-size: 0.8em;
+  }
+
+  .ajuste{
+    margin-top: 4em;
+  }
+
+  .botao-entrar{
+    margin-top: 6em;
+    font-weight: 700;
+  }
+ 
+
+
+
+}
